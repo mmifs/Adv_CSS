@@ -75,12 +75,30 @@ header nav ul li a {
 }
 
 .rightColumn {
+  display: flex;
+  flex-direction: column;
   width: 67%;
   padding-left: 10px;
-  height: 180px;
+  height: 200px;
+}
+
+#multiColumn {
+  display: flex;
+  flex-direction: row;
+  width: 67%;
+  padding-left: 10px;
+  height: 200px;
+}
+
+.rightColumnA {
+  width: 50%;
+}
+
+.rightColumnB {
+  width: 50%;
 }
 
 #firstApp {
   background-image: url(./assets/runbuddy.jpg);
-  height: 200px;
+  height: 173px;
 }
