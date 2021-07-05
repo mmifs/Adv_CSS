@@ -32,10 +32,7 @@ header nav {
   margin: 7px;
 }
 
-header nav ul {
-  display: inline;
-}
-
+header nav ul,
 header nav ul li {
   display: inline;
 }
@@ -80,7 +77,8 @@ header nav ul li a {
 .rightColumn {
   display: flex;
   flex-direction: column;
-  width: 67%;
+  max-width: 67%;
+  width: auto;
   padding-left: 10px;
   height: 205px;
 }
@@ -100,13 +98,11 @@ header nav ul li a {
   padding-bottom: 20px;
 }
 
-
-.rightColumnA {
-  width: 40%;
-  padding-left: 10px;
-  padding-right: 10px;
+#myApplications {
+  width: 100%;
 }
 
+.rightColumnA,
 .rightColumnB {
   width: 40%;
   padding-left: 10px;
@@ -117,28 +113,30 @@ header nav ul li a {
   display: inline;
 }
 
-#firstApp {
-  background-image: url(./assets/runbuddy.jpg);
-  height: 170px;
+.runBuddy {
+  width: 1000px;
+  max-height: 170px;
+  min-width: 0px;
+  min-height: 0px;
 }
 
-#glad {
-  background-image: url(./assets/vsmglad.jpg);
-  height: 170px;
-  width: 460px;
-  border: solid 3px red;
-  flex-grow: 0;
-}
-
-#passwordGen {
+img {
   background-image: url(./assets/password2.jpg);
-  height: 170px;
-  width: 460px;
   border: solid 3px red;
   flex-grow: 0;
 }
 
-/* @media screen and (max-width: 768px) {
-  .row {
+#pic {
+  padding-top: 23px;
+}
+
+ @media screen and (max-width: 1400px) {
+  
+  #multiColumn {
     flex-direction: column;
-  } */
+    height: 100%;
+  }
+
+  .rightColumn {
+    border-left: solid 3px #333;
+  }
