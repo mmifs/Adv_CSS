@@ -50,3 +50,30 @@ You are required to submit BOTH of the following for review:
 
 - - -
 © 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+
+
+________________________________________________
+
+Completion Notes per requirement
+
+GIVEN I need to sample a potential employee's previous work
+WHEN I load their portfolio
+THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them *my first name appears in the top left corner of the web page, i did not include my full name as personal information is not required for the purposes of the challenge as per Hilmi "feel free to use dump data"*
+WHEN I click one of the links in the navigation
+THEN the UI scrolls to the corresponding section *the nav bar functions as intended, although the page is not big enough to accurately scroll to any section but the bio (first link)*
+WHEN I click on the link to the section about their work
+THEN the UI scrolls to a section with titled images of the developer's applications *the "My Work" link on the nav bar performs this function*
+WHEN I am presented with the developer's first application
+THEN that application's image should be larger in size than the others *the RUN BUDDY application image represents my first and therefore larger application image
+WHEN I click on the images of the applications
+THEN I am taken to that deployed application *this function works as intended*
+WHEN I resize the page or view the site on various screens and devices
+THEN I am presented with a responsive layout that adapts to my viewport *the robot gladiators application and password generator will adjust to a column rather than a row on screens smaller than 1400px*
+
+________________________________________________
+
+Some limitations/additions/changes to be made in the future follow:
+
+* The code is not optimized and should be refactored
+* Most of the links on the page only lead to a "coming soon" webpage
+* The linked image for run buddy application appears to cover most of the div section, whereas this is not intended and should only cover the image itself and the title above the image

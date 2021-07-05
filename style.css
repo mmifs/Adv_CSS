@@ -13,6 +13,7 @@ body {
 header {
   padding: 20px 35px;
   background-color: #333;
+  min-width: 463px;
 }
 
 header h1 {
@@ -43,7 +44,12 @@ header nav ul li a {
   font-size: 22px;
 }
 
+.mainWrapper {
+  min-width: 712px;
+}
+
 /* applications CSS with flex */
+
 
 .row {
   display: flex;
@@ -63,7 +69,8 @@ header nav ul li a {
   flex-basis: 100%;
   flex: 1;
 }
-
+ /* 527x873 */
+ 
 .leftColumn {
   width: 20%;
   border-right: solid #333 3px;
@@ -71,16 +78,23 @@ header nav ul li a {
   padding-right: 10px;
   height: 205px;
   padding-bottom: 20px;
+  min-width: 142px;
+  min-height: 248px;
 }
-
 
 .rightColumn {
   display: flex;
   flex-direction: column;
   max-width: 67%;
-  width: auto;
   padding-left: 10px;
   height: 205px;
+  min-width: 527px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.runBuddy {
+  max-height: 170px;
 }
 
 #multiColumn {
@@ -100,6 +114,7 @@ header nav ul li a {
 
 #myApplications {
   width: 100%;
+  text-align: center;
 }
 
 .rightColumnA,
@@ -107,21 +122,18 @@ header nav ul li a {
   width: 40%;
   padding-left: 10px;
   padding-right: 10px;
+  text-align: center;
 }
 
 #resumeLink {
   display: inline;
 }
 
-.runBuddy {
-  width: 1000px;
-  max-height: 170px;
-  min-width: 0px;
-  min-height: 0px;
+.smImg {
+  align: bottom;
 }
 
 img {
-  background-image: url(./assets/password2.jpg);
   border: solid 3px red;
   flex-grow: 0;
 }
@@ -135,8 +147,17 @@ img {
   #multiColumn {
     flex-direction: column;
     height: 100%;
+    margin-left: 0px;
   }
 
-  .rightColumn {
-    border-left: solid 3px #333;
+  .rightColumnB {
+    border-left: solid #333 3px;
+    margin-left: -13px;
+    margin-top: 40px;
+    margin-bottom: -23px;
+    padding-bottom: 10px;
   }
+  #myApplications {
+    text-align: left;
+  }
+}
