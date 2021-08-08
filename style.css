@@ -93,8 +93,8 @@ header nav ul li a {
   margin-top: 0px;
 }
 
-.runBuddy {
-  max-height: 170px;
+.enviroDashboard {
+  max-height: auto;
 }
 
 #multiColumn {
